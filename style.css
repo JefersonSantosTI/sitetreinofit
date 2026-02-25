@@ -106,11 +106,10 @@ p {
 }
 
 /* -------- MOBILE -------- */
-
 @media (max-width: 768px) {
 
     body {
-        overflow-x: hidden; /* evita scroll lateral */
+        overflow-x: hidden;
     }
 
     .conteudo {
@@ -120,13 +119,12 @@ p {
 
     .nav-list {
         flex-direction: column;
-        position: absolute;
-        right: 0;
-        top: 70px;
+        position: static;   /* remove absoluto */
         width: 100%;
         background: #23232e;
         padding: 20px 0;
-        display: none;
+        display: flex;      /* 👈 IMPORTANTE */
+        align-items: center;
+        gap: 20px;
     }
-
 }
