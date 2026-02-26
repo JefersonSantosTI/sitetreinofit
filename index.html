@@ -17,6 +17,7 @@
 <nav class="barra">
     <img class="logo" src="img/Logo Treino Fit.png" alt="Logo">
     
+    <div class="mobile-menu">☰</div>
     
     <ul class="nav-list">
         <li><a href="">Inicio</a></li>
@@ -79,6 +80,14 @@
     </section>
     </div>
  -->
+ <script>
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const navList = document.querySelector(".nav-list");
+    
+    mobileMenu.addEventListener("click", () => {
+        navList.classList.toggle("active");
+    });
+    </script>
 
 </body>
 <script src="scripts.js"></script>

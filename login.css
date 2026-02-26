@@ -120,3 +120,36 @@ body{
     margin-left: 25%;
 
 }
+
+
+/* Esconde botão no desktop */
+.mobile-menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        width: 100%;
+        background: #23232e;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+}
